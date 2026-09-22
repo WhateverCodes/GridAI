@@ -272,6 +272,29 @@ The eventual GridAI web interface is intended to provide an interactive forecast
 
 ---
 
+## Dataset
+
+The project uses a German electricity time-series dataset containing
+15-minute electricity measurements and generation data.
+
+The original dataset is not included in this repository because of its
+large file size.
+
+To reproduce the project:
+
+1. Download the dataset from the original source. (https://www.kaggle.com/datasets/samithsachidanandan/german-power-consumption)
+2. Place the CSV file in the project directory.
+3. Open `notebooks/01_data_exploration.ipynb`.
+4. Update the dataset path if necessary.
+5. Run the notebook from the beginning.
+
+> **Note:** The notebook was created using the dataset version available at the time of development. Since then, additional entries have been added to the dataset. As a result, the notebook may require updates to the data-loading, preprocessing, and cleaning steps before it can be run successfully with the latest version.
+
+> The dataset is used for research and educational purposes. Please refer
+> to the original dataset source for its licensing and usage conditions.
+
+---
+
 ## Goal
 
 GridAI aims to become an interactive electricity forecasting system that learns temporal patterns in German power-system data and presents future forecasts through a web-based dashboard.

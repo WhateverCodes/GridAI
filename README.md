@@ -1,4 +1,3 @@
-````markdown
 # GridAI — German Electricity Forecasting
 
 GridAI is a time-series forecasting project for predicting electricity demand from German power-system data. It uses historical electricity measurements, temporal feature engineering, and machine-learning models to forecast future energy-system values.
@@ -7,13 +6,13 @@ GridAI is a time-series forecasting project for predicting electricity demand fr
 
 ```
 GridAI/
-├── <dataset>.csv
+├── <your-dataset-name>.csv
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── model_features.pkl
 │   └── xgboost_load_forecasting_model.pkl
 └── README.md
-````
+```
 
 ## Current Status
 

@@ -5,7 +5,7 @@ GridAI is a time-series forecasting project for predicting electricity demand fr
 
 ## Project Structure
 
-```text
+```
 GridAI/
 ├── <dataset>.csv
 ├── notebooks/
@@ -169,7 +169,7 @@ Both files are used together when loading the saved model for prediction.
 
 ---
 
-## Notebook
+## Notebooks
 
 `01_data_exploration.ipynb` contains the main workflow:
 

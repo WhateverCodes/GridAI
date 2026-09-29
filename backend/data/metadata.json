@@ -1,0 +1,280 @@
+{
+  "version": "GridAI forecast-safe XGBoost v1",
+  "targets": {
+    "load": {
+      "title": "Electricity Load",
+      "unit": "MW",
+      "model": "Forecast-safe XGBoost",
+      "test_mae": 278.48,
+      "test_rmse": 405.68,
+      "persistence_mae": 519.3434431757873,
+      "persistence_rmse": 690.2303819948773,
+      "improvement_pct": 46.58,
+      "latest_observed": "2026-08-27T21:45:00+00:00",
+      "feature_importance": [
+        {
+          "feature": "lag_15min",
+          "importance": 0.6093597412109375
+        },
+        {
+          "feature": "rolling_mean_1hour",
+          "importance": 0.3833099901676178
+        },
+        {
+          "feature": "hour",
+          "importance": 0.002342084888368845
+        },
+        {
+          "feature": "lag_1week",
+          "importance": 0.0020857704803347588
+        },
+        {
+          "feature": "lag_1hour",
+          "importance": 0.0019028878305107355
+        },
+        {
+          "feature": "minute",
+          "importance": 0.00022879274911247194
+        },
+        {
+          "feature": "day_of_week",
+          "importance": 0.0002112571382895112
+        },
+        {
+          "feature": "is_weekend",
+          "importance": 0.0001655538217164576
+        },
+        {
+          "feature": "rolling_mean_1day",
+          "importance": 0.00011321171041345224
+        },
+        {
+          "feature": "lag_1day",
+          "importance": 0.00010705858585424721
+        },
+        {
+          "feature": "day_of_year",
+          "importance": 7.620076212333515e-05
+        },
+        {
+          "feature": "month",
+          "importance": 5.795897959615104e-05
+        },
+        {
+          "feature": "rolling_std_1day",
+          "importance": 3.951438338845037e-05
+        }
+      ]
+    },
+    "wind": {
+      "title": "Wind Generation",
+      "unit": "MW",
+      "model": "Forecast-safe XGBoost",
+      "test_mae": 223.61,
+      "test_rmse": 385.3,
+      "persistence_mae": 274.89,
+      "persistence_rmse": 389.11,
+      "improvement_pct": 20.46,
+      "latest_observed": "2026-08-28T21:45:00+00:00",
+      "feature_importance": [
+        {
+          "feature": "lag_15min",
+          "importance": 0.6457066535949707
+        },
+        {
+          "feature": "rolling_mean_1hour",
+          "importance": 0.3532017469406128
+        },
+        {
+          "feature": "lag_1hour",
+          "importance": 0.0006523634656332433
+        },
+        {
+          "feature": "hour",
+          "importance": 6.95446869940497e-05
+        },
+        {
+          "feature": "day_of_year",
+          "importance": 6.201084761414677e-05
+        },
+        {
+          "feature": "rolling_std_1day",
+          "importance": 4.4252927182242274e-05
+        },
+        {
+          "feature": "day_of_week",
+          "importance": 4.3136285967193544e-05
+        },
+        {
+          "feature": "month",
+          "importance": 4.150699169258587e-05
+        },
+        {
+          "feature": "is_weekend",
+          "importance": 4.069334681844339e-05
+        },
+        {
+          "feature": "rolling_mean_1day",
+          "importance": 3.989435208495706e-05
+        },
+        {
+          "feature": "lag_1week",
+          "importance": 3.642429510364309e-05
+        },
+        {
+          "feature": "lag_1day",
+          "importance": 3.1027015211293474e-05
+        },
+        {
+          "feature": "minute",
+          "importance": 3.0814797355560586e-05
+        }
+      ]
+    },
+    "solar": {
+      "title": "Solar Generation",
+      "unit": "MW",
+      "model": "Forecast-safe XGBoost",
+      "test_mae": 753.58,
+      "test_rmse": 2525.69,
+      "persistence_mae": 528.67,
+      "persistence_rmse": 920.27,
+      "improvement_pct": -28.57,
+      "latest_observed": "2026-08-28T21:45:00+00:00",
+      "feature_importance": [
+        {
+          "feature": "lag_15min",
+          "importance": 0.5754026174545288
+        },
+        {
+          "feature": "rolling_mean_1hour",
+          "importance": 0.3981746435165405
+        },
+        {
+          "feature": "lag_1day",
+          "importance": 0.013772250153124332
+        },
+        {
+          "feature": "hour",
+          "importance": 0.010395543649792671
+        },
+        {
+          "feature": "lag_1hour",
+          "importance": 0.0009948576334863901
+        },
+        {
+          "feature": "rolling_std_1day",
+          "importance": 0.0004981404636055231
+        },
+        {
+          "feature": "lag_1week",
+          "importance": 0.00047232708311639726
+        },
+        {
+          "feature": "day_of_year",
+          "importance": 6.561847840202972e-05
+        },
+        {
+          "feature": "month",
+          "importance": 5.279975448502228e-05
+        },
+        {
+          "feature": "minute",
+          "importance": 5.2696570492116734e-05
+        },
+        {
+          "feature": "rolling_mean_1day",
+          "importance": 4.9535356083652005e-05
+        },
+        {
+          "feature": "is_weekend",
+          "importance": 3.87296786357183e-05
+        },
+        {
+          "feature": "day_of_week",
+          "importance": 3.01769523503026e-05
+        }
+      ]
+    },
+    "hydro": {
+      "title": "Hydro Generation",
+      "unit": "MW",
+      "model": "Forecast-safe XGBoost",
+      "test_mae": 218.58,
+      "test_rmse": 349.99,
+      "persistence_mae": 282.833463,
+      "persistence_rmse": 468.440947,
+      "improvement_pct": 19.76,
+      "latest_observed": "2026-08-28T21:45:00+00:00",
+      "feature_importance": [
+        {
+          "feature": "lag_15min",
+          "importance": 0.6769921779632568
+        },
+        {
+          "feature": "rolling_mean_1hour",
+          "importance": 0.2982618510723114
+        },
+        {
+          "feature": "lag_1hour",
+          "importance": 0.005253457929939032
+        },
+        {
+          "feature": "hour",
+          "importance": 0.003999816719442606
+        },
+        {
+          "feature": "minute",
+          "importance": 0.0034644471015781164
+        },
+        {
+          "feature": "lag_1day",
+          "importance": 0.002351240022107959
+        },
+        {
+          "feature": "lag_1week",
+          "importance": 0.0021017438266426325
+        },
+        {
+          "feature": "is_weekend",
+          "importance": 0.0019472598796710372
+        },
+        {
+          "feature": "day_of_year",
+          "importance": 0.001446510897949338
+        },
+        {
+          "feature": "rolling_mean_1day",
+          "importance": 0.0012671808945015073
+        },
+        {
+          "feature": "day_of_week",
+          "importance": 0.0010369201190769672
+        },
+        {
+          "feature": "month",
+          "importance": 0.0010355089325457811
+        },
+        {
+          "feature": "rolling_std_1day",
+          "importance": 0.0008419334189966321
+        }
+      ]
+    }
+  },
+  "features": [
+    "lag_15min",
+    "lag_1hour",
+    "lag_1day",
+    "lag_1week",
+    "rolling_mean_1hour",
+    "rolling_mean_1day",
+    "rolling_std_1day",
+    "hour",
+    "minute",
+    "day_of_week",
+    "month",
+    "day_of_year",
+    "is_weekend"
+  ]
+}

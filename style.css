@@ -1,0 +1,65 @@
+*{box-sizing:border-box}body{margin:0;background:#07110d;color:#e7f1eb;font:14px Inter,system-ui,sans-serif;display:flex;min-height:100vh}aside{width:245px;padding:24px 16px;border-right:1px solid #173027;background:#08140f;position:fixed;inset:0 auto 0 0}.brand{display:flex;gap:12px;align-items:center;margin:4px 10px 38px}.brand>b{width:38px;height:38px;border:1px solid #2c7659;border-radius:11px;display:grid;place-items:center;color:#8be0b4;font-size:22px}.brand span{display:grid}.brand strong{font-size:18px}.brand small,.muted,small{color:#7f988b}nav{display:grid;gap:7px}nav button{border:0;background:transparent;color:#8fa79b;text-align:left;padding:12px 14px;border-radius:9px;font:inherit;cursor:pointer}nav button.active,nav button:hover{background:#11291f;color:#eafff2}.status{position:absolute;bottom:24px;left:26px;color:#8be0b4}.status small{color:#678073}main{margin-left:245px;width:calc(100% - 245px);padding:28px 42px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #173027;padding-bottom:18px}label{font-size:10px;letter-spacing:1.5px;color:#6f9784}h1{font-size:20px;margin:5px 0 0}h2{font-size:34px;margin:10px 0 8px}h3{margin:7px 0 12px}.badges{padding:9px 12px;border:1px solid #275d47;border-radius:999px;color:#8be0b4}.page{display:none;padding-top:28px}.page.show{display:block}.hero{display:flex;justify-content:space-between;gap:30px;padding:28px 0}.hero p{max-width:700px;color:#9bb1a6;line-height:1.7}.hero em{font-style:normal;color:#8be0b4}.core{width:150px;height:150px;border:1px solid #2c7659;border-radius:28px;display:grid;place-content:center;text-align:center;color:#8be0b4;font-weight:700;letter-spacing:5px}.cards,.forecast-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:10px 0 18px}.cards>div,.forecast-cards>div{background:#0b1b14;border:1px solid #173a2b;border-radius:12px;padding:17px}.cards span,.forecast-cards span{display:block;color:#799589;font-size:11px}.cards b,.forecast-cards b{display:block;font-size:21px;margin:8px 0}.cards i{font-size:10px;font-style:normal;color:#789287}.grid{display:grid;grid-template-columns:1.6fr 1fr;gap:16px}.panel{background:#0a1812;border:1px solid #183a2c;border-radius:14px;padding:20px;margin-bottom:16px}.panel header{display:flex;justify-content:space-between;align-items:center}select,input,button{background:#0c2017;color:#dceae3;border:1px solid #28533f;border-radius:8px;padding:10px 12px;font:inherit}button{cursor:pointer}.controls{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin:18px 0}.controls label{display:grid;gap:7px}.forecast-controls{background:#0a1812;border:1px solid #183a2c;padding:16px;border-radius:12px}.forecast-controls button{background:#1d6a4a;color:#fff}.notice{min-height:24px;color:#8be0b4;margin:8px 0}.snapshot{min-height:170px;display:grid;place-content:center;text-align:center}.snapshot b{font-size:42px;color:#8be0b4}.snapshot span{color:#789287}.snapshot p{color:#6f8279}.list p{padding:10px 0;border-bottom:1px solid #173027;display:flex;justify-content:space-between}.list b{color:#8be0b4}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.detail-grid div{background:#0d2118;border:1px solid #193e2f;padding:15px;border-radius:10px}.detail-grid span{display:block;color:#789287;font-size:11px}.detail-grid b{display:block;margin-top:6px}.bars p{display:grid;grid-template-columns:260px 1fr;gap:10px;align-items:center;color:#91a89e}.bars b{display:block;background:#245b43;border-radius:4px;height:20px;text-align:right;padding-right:5px;color:#dff9eb;font-size:11px;line-height:20px;min-width:35px}svg{width:100%;height:auto;background:#07110d;border-radius:10px;margin-top:12px}svg line{stroke:#294238}svg text{fill:#769086;font-size:11px}.forecast-line{fill:none;stroke:#8be0b4;stroke-width:3}footer{padding:28px 0;color:#587167;text-align:center}@media(max-width:900px){aside{position:static;width:100%;height:auto;border-right:0;border-bottom:1px solid #173027}body{display:block}nav{display:flex;overflow:auto}.status{display:none}main{margin:0;width:100%;padding:20px}.cards,.forecast-cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.core{display:none}.detail-grid{grid-template-columns:1fr}}
+.model-selector-stack{display:grid;grid-template-columns:1fr;gap:12px;max-width:520px;margin:18px 0}.model-selector-stack label{display:grid;gap:7px}.feature-stack{display:flex;flex-direction:column;gap:18px}.feature-panel{width:100%}.bars p{grid-template-columns:260px minmax(0,1fr)}.error-text{color:#ff8c8c}.snapshot small{color:#6f9784;margin-top:8px}@media(max-width:900px){.bars p{grid-template-columns:150px minmax(0,1fr)}}
+/* Model performance table */
+.model-table-panel{padding:0;overflow:hidden}
+.table-wrap{overflow-x:auto}
+.model-table{width:100%;border-collapse:collapse;min-width:850px}
+.model-table th,.model-table td{padding:18px 20px;text-align:left;border-bottom:1px solid #173027;vertical-align:middle}
+.model-table th{color:#7f988b;font-size:11px;letter-spacing:.7px;font-weight:500;background:#09160f}
+.model-table td{color:#dceae3}
+.model-table tbody tr:last-child td{border-bottom:0}
+.model-table tbody tr:hover{background:#0c1d15}
+.model-table .target-name{font-weight:600;color:#e8f4ee}
+.model-row-select{width:100%;min-width:190px}
+.model-status{margin-top:6px;color:#6f9784;font:10px monospace;letter-spacing:.8px}
+.model-note{padding:14px 18px;margin-top:12px}
+.model-note p{margin:0}
+@media(max-width:900px){.model-table th,.model-table td{padding:13px}.model-row-select{min-width:165px}}
+/* Final interaction refinements */
+.model-detail-row{display:none;background:#09160f}
+.model-detail-row.is-open{display:table-row}
+.model-detail-row td{color:#9fb4a9}
+.model-detail-row .detail-model{padding-left:34px;color:#b9ccc3;font-weight:500}
+.reference-badge{font:10px monospace;letter-spacing:.8px;color:#6f9784}
+.expand-model{width:100%;min-width:230px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#0c2017;color:#dceae3;border:1px solid #28533f;border-radius:8px;padding:10px 12px;text-align:left}
+.expand-model .chevron{font-size:20px;line-height:1;transition:transform .15s ease;color:#8be0b4}
+.expand-model[aria-expanded="true"] .chevron{transform:rotate(180deg)}
+.model-table .model-main-row td{height:92px}
+.model-table .model-detail-row td{font-size:13px}
+.model-table .model-detail-row:hover{background:#0c1d15}
+
+/* Keep the chart labels separated: Y values sit beside the Y axis and
+   X timestamps get their own lower band so the lower-left corner never overlaps. */
+#forecastChart{overflow:visible;display:block}
+#forecastChart .axis{stroke:#294238;stroke-width:1}
+#forecastChart .axis-y-label{fill:#769086;font-size:11px}
+#forecastChart .axis-x-label{fill:#769086;font-size:11px}
+
+/* Make the forecast date control visibly quarter-hour based. */
+#forecastDate{min-width:155px}
+.quarter-time{display:flex;gap:6px;align-items:center}.quarter-time input,.quarter-time select{height:42px}.quarter-time input{min-width:145px}.quarter-time select{min-width:62px}.quarter-time select:nth-of-type(1){min-width:68px}.quarter-time select:nth-of-type(2){min-width:68px}.chart-wrap{position:relative}.chart-tooltip{position:absolute;display:none;pointer-events:none;z-index:5;min-width:150px;padding:9px 11px;border:1px solid #2b6b50;border-radius:8px;background:#0b1b14;color:#dff9eb;box-shadow:0 8px 22px rgba(0,0,0,.35);font-size:11px;line-height:1.45}.chart-tooltip.show{display:block}.chart-tooltip strong{color:#8be0b4}.chart-tooltip b{font-size:13px}.hover-point{fill:transparent;stroke:transparent;cursor:crosshair}.hover-point:hover,.hover-point.active{fill:#8be0b4;stroke:#eafff2;stroke-width:2}.grid-line{stroke:#183a2c;stroke-dasharray:4 5;stroke-width:1}
+
+
+@media(max-width:900px){
+  .expand-model{min-width:190px}
+  .model-table .model-main-row td{height:auto}
+}
+
+/* Quarter-hour forecast controls */
+.quarter-time{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.quarter-time input,.quarter-time select{height:42px}
+.quarter-time input{min-width:145px}
+.quarter-time select{min-width:62px}
+
+/* Interactive forecast chart */
+.chart-wrap{position:relative}
+.chart-tooltip{position:absolute;display:none;pointer-events:none;z-index:5;min-width:155px;padding:9px 11px;border:1px solid #2b6b50;border-radius:8px;background:#0b1b14;color:#dff9eb;box-shadow:0 8px 22px rgba(0,0,0,.35);font-size:11px;line-height:1.45}
+.chart-tooltip.show{display:block}
+.chart-tooltip strong{color:#8be0b4}
+.chart-tooltip b{font-size:13px}
+.hover-point{fill:transparent;stroke:transparent;cursor:crosshair}
+.hover-point:hover,.hover-point.active{fill:#8be0b4;stroke:#eafff2;stroke-width:2}
+.grid-line{stroke:#183a2c;stroke-dasharray:4 5;stroke-width:1}
+#forecastChart{overflow:visible;display:block}
+#forecastChart .axis{stroke:#294238;stroke-width:1}
+#forecastChart .axis-y-label,#forecastChart .axis-x-label{fill:#769086;font-size:11px}

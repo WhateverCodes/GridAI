@@ -1,0 +1,24 @@
+{
+  "total_cells": 154,
+  "executed_code_cells": 90,
+  "restored_original_cells": 61,
+  "adapted_original_cells": [
+    3,
+    46,
+    49,
+    51,
+    52,
+    56,
+    62,
+    66
+  ],
+  "expanded_target_walkthroughs": [
+    "fossil",
+    "nuclear",
+    "imports"
+  ],
+  "new_target_model_scores_verified": 18,
+  "all_target_test_comparisons_verified": 42,
+  "separate_long_range_solar_comparisons_verified": 3,
+  "execution_errors": 0
+}

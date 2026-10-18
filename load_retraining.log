@@ -1,0 +1,6 @@
+load: 15-minute Persistence
+load: Daily Seasonal Persistence
+load: Ridge Regression
+load: Extra Trees
+load: Direct XGBoost
+load: Delta XGBoost

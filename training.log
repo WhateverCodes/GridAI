@@ -1,0 +1,42 @@
+load: 15-minute Persistence
+load: Daily Seasonal Persistence
+load: Ridge Regression
+load: Extra Trees
+load: Direct XGBoost
+load: Delta XGBoost
+wind: 15-minute Persistence
+wind: Daily Seasonal Persistence
+wind: Ridge Regression
+wind: Extra Trees
+wind: Direct XGBoost
+wind: Delta XGBoost
+solar: 15-minute Persistence
+solar: Daily Seasonal Persistence
+solar: Ridge Regression
+solar: Extra Trees
+solar: Direct XGBoost
+solar: Delta XGBoost
+hydro: 15-minute Persistence
+hydro: Daily Seasonal Persistence
+hydro: Ridge Regression
+hydro: Extra Trees
+hydro: Direct XGBoost
+hydro: Delta XGBoost
+fossil: 15-minute Persistence
+fossil: Daily Seasonal Persistence
+fossil: Ridge Regression
+fossil: Extra Trees
+fossil: Direct XGBoost
+fossil: Delta XGBoost
+nuclear: 15-minute Persistence
+nuclear: Daily Seasonal Persistence
+nuclear: Ridge Regression
+nuclear: Extra Trees
+nuclear: Direct XGBoost
+nuclear: Delta XGBoost
+imports: 15-minute Persistence
+imports: Daily Seasonal Persistence
+imports: Ridge Regression
+imports: Extra Trees
+imports: Direct XGBoost
+imports: Delta XGBoost

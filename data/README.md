@@ -20,3 +20,6 @@ To run the notebook or retrain the models:
 The dashboard does not require this raw CSV. It uses the saved models in `backend/models/` and the packaged history and metadata in `backend/data/`.
 
 Keep those backend folders and their required files intact.
+
+The link for downloading the dataset is :
+https://www.kaggle.com/datasets/samithsachidanandan/german-power-consumption

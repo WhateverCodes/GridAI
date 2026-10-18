@@ -1,0 +1,44 @@
+[
+  {
+    "target": "load",
+    "status": "passed",
+    "week_steps": 672,
+    "model": "Delta XGBoost"
+  },
+  {
+    "target": "wind",
+    "status": "passed",
+    "week_steps": 672,
+    "model": "Ridge Regression"
+  },
+  {
+    "target": "solar",
+    "status": "passed",
+    "week_steps": 672,
+    "model": "Delta XGBoost"
+  },
+  {
+    "target": "hydro",
+    "status": "passed",
+    "week_steps": 672,
+    "model": "Delta XGBoost"
+  },
+  {
+    "target": "fossil",
+    "status": "passed",
+    "week_steps": 672,
+    "model": "Ridge Regression"
+  },
+  {
+    "target": "nuclear",
+    "status": "passed",
+    "week_steps": 672,
+    "model": "15-minute Persistence"
+  },
+  {
+    "target": "imports",
+    "status": "passed",
+    "week_steps": 672,
+    "model": "Extra Trees"
+  }
+]

@@ -1,6 +1,6 @@
 # GridAI — seven-target forecasting
 
-Load, wind, solar, hydro, fossil, nuclear and aggregate imports, with six methods compared for each target. The executed notebook, raw CSV, fitted artifacts, test predictions and evaluation reports are included.
+Load, wind, solar, hydro, fossil, nuclear and aggregate imports, with six methods compared for each target. The executed notebook, fitted artifacts, test predictions and evaluation reports are included.
 
 ## Run the dashboard
 

@@ -1,0 +1,57 @@
+{
+  "model": "Calendar Extra Trees (direct long-range Solar)",
+  "selected_kind": "extra_trees",
+  "test_mae": 2719.1047005433743,
+  "test_rmse": 5467.378070972896,
+  "comparison": [
+    {
+      "kind": "profile",
+      "model": "Calendar Seasonal Profile",
+      "validation_mae": 2363.6674072601154,
+      "validation_rmse": 4569.002586698502,
+      "test_mae": 2801.6837343969264,
+      "test_rmse": 5658.186784734825
+    },
+    {
+      "kind": "extra_trees",
+      "model": "Calendar Extra Trees",
+      "validation_mae": 2112.2543964145484,
+      "validation_rmse": 4126.706077846941,
+      "test_mae": 2719.1047005433743,
+      "test_rmse": 5467.378070972896
+    },
+    {
+      "kind": "xgboost",
+      "model": "Calendar XGBoost",
+      "validation_mae": 2256.6121103176993,
+      "validation_rmse": 4106.540799051245,
+      "test_mae": 2970.806885426924,
+      "test_rmse": 5771.754107098401
+    }
+  ],
+  "source_latest": "2026-08-28T21:45:00+00:00",
+  "calibration": {
+    "scale": 1.5365520610385537,
+    "ceiling": 58810.055
+  },
+  "use_when": "First prediction more than one day after source data, or requested horizon longer than one day.",
+  "evaluation": "Direct calendar predictions over the complete held-out test window, with calibration fixed before that window. Model selected on validation MAE.",
+  "limitation": "Calendar-average Solar pattern without future weather. Scale uses preceding 28 observed days; output is bounded by maximum observed Solar at source cutoff. Future capacity growth is not extrapolated.",
+  "splits": {
+    "train": {
+      "rows": 268383,
+      "start": "2015-01-07T23:00:00+00:00",
+      "end": "2023-02-21T10:15:00+00:00"
+    },
+    "validation": {
+      "rows": 57511,
+      "start": "2023-02-21T10:30:00+00:00",
+      "end": "2024-10-20T11:15:00+00:00"
+    },
+    "test": {
+      "rows": 57511,
+      "start": "2024-10-20T11:30:00+00:00",
+      "end": "2026-08-28T21:45:00+00:00"
+    }
+  }
+}
